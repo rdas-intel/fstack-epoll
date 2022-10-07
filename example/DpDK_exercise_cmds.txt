@@ -1,0 +1,337 @@
+    1  pwd
+    2  cd /original_pnp/f-stack/
+    3  pwd
+    4  cd example/
+    5  ip r
+    6  ls -ltr
+    7  vim main_epoll_vanilla.c 
+    8  pwds
+    9  pwd
+   10  make
+   11  history | grep PKG_CONFIG_PATH
+   12  pwd
+   13  cd ..
+   14  ls
+   15  pwd
+   16  history
+   17  vim README.md 
+   18  export PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/local/lib64/pkgconfig:/usr/lib/pkgconfig
+   19  cd example/
+   20  make
+   21  ls -ltr
+   22  vim main_epoll_vanilla.c 
+   23  ./epoll_vanila 9001 1 192.168.232.251
+   24  vim main_epoll_vanilla.c 
+   25  ./epoll_vanila 9001 1 192.168.232.251
+   26  ./epoll_vanila 9001 1 "192.168.232.251"
+   27  make
+   28  ./epoll_vanila 9001 1 "192.168.232.251"
+   29  netstat -tlpn
+   30  ./epoll_vanila 9001 1 "192.168.232.251" &
+   31  netstat -tlpn
+   32  pkill epoll
+   33  netstat -tlpn
+   34  vim main_epoll_vanilla.c 
+   35  make
+   36  ./epoll_vanila 9001 1 "192.168.232.251" &
+   37  netstat -tlpn
+   38  which wrk
+   39  netstat -tlpn
+   40  pkill -9 epoll
+   41  ./epoll_vanila 9001 0 "192.168.232.251" &
+   42  ./epoll_vanila 9002 0 "192.168.232.251" &
+   43  netstat -tlpn
+   44  pkill -9 epoll
+   45  for i in {1..26}; do port=$(( 9000+i )); echo $port; done
+   46  for i in {1..26}; do port=$(( 9000+i )); ./epoll_vanila $port 0 "192.168.232.251" & ; done
+   47  for i in {1..26}; do port=$(( 9000+i )); ./epoll_vanila $port 0 "192.168.232.251" &; done
+   48  for i in {1..26}; do port=$(( 9000+i )); ./epoll_vanila $port 0 "192.168.232.251"& ; done
+   49  for i in {1..26}; do port=$(( 9000+i )); ./epoll_vanila $port 0  192.168.232.251 & ; done
+   50  for i in {1..26}; do port=$(( 9000+i )); ./epoll_vanila ${port} 0  192.168.232.251 & ; done
+   51  for i in {1..26}; do port=$(( 9000+i )); echo "./epoll_vanila ${port} 0  192.168.232.251 & "; done
+   52  ls -ltr
+   53  for i in {1..26}; do port=$(( 9000+i ));./epoll_vanila ${port} 0  192.168.232.251 & ; done
+   54  for i in {1..26}; do port=$(( 9000+i ));epoll_vanila ${port} 0  192.168.232.251 & ; done
+   55  for i in {1..26}; do port=$(( 9000+i )); epoll_vanila ${port} 0  192.168.232.251 & ; done
+   56  pwd
+   57  for i in {1..26}; do port=$(( 9000+i )); /original_pnp/f-stack/example/epoll_vanila ${port} 0  192.168.232.251 & ; done
+   58  for i in {1..26}; do port=$(( 9000+i )); /original_pnp/f-stack/example/epoll_vanila ${port} 0  "192.168.232.251" & ; done
+   59  vim launch_epoll.sh
+   60  chmod +x launch_epoll.sh 
+   61  ./launch_epoll.sh 
+   62  netstat -tlpn
+   63  top
+   64  htop
+   65  pwd
+   66  ls -ltr
+   67  pkill -9 epoll
+   68  pwd
+   69  vim start.sh 
+   70  pwd
+   71  cd ..
+   72  cd example/
+   73  ip addr
+   74  ifconfig ens2f3 down
+   75  ip r
+   76  ls -ltr
+   77  pwd
+   78  cd ..
+   79  cd dpdk/
+   80  ls -ltr
+   81  pwd
+   82  cd ../example/
+   83  make
+   84  ls -ltr
+   85  ./start.sh 9001
+   86  history | grep start
+   87  vim start.sh 
+   88  ./start.sh -c epoll.ini -b echo_epoll 9001
+   89  ./start.sh -c epoll.ini -b ./echo_epoll 9001
+   90  top
+   91  pwd
+   92  cd ..
+   93  pwd
+   94  cd dpdk/
+   95  ls
+   96  ls -ltr
+   97  rm -rf x86_64-native-linuxapp-gcc/
+   98  ifconfig ens2f3 down
+   99  history
+  100  pwd
+  101  cd ../example/
+  102  ./start.sh -c epoll.ini -b ./echo_epoll 9001
+  103  pwd
+  104  cd ..
+  105  pwd
+  106  history | grep export
+  107  pwd
+  108  ls
+  109  vim README.md 
+  110* 
+  111  export FF_PATH=/original_pnp/f-stack
+  112  export FF_DPDK=/original_pnp/f-stack/dpdk/x86_64-native-linuxapp-gcc
+  113  cd lib/
+  114  make
+  115  make install 
+  116  pwd
+  117  cd ../example/
+  118  make
+  119  ./start.sh -c epoll.ini -b ./echo_epoll 9001
+  120  echo 1024 > /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages
+  121  mkdir /mnt/huge
+  122  mount -t hugetlbfs nodev /mnt/huge
+  123  echo 0 > /proc/sys/kernel/randomize_va_space
+  124  vim epoll.ini 
+  125  ./start.sh -c epoll.ini -b ./echo_epoll 9001
+  126  vim start.sh 
+  127  ls -ltr
+  128  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0
+  129  vim  epoll.ini 
+  130  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0
+  131  history
+  132  export PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/local/lib64/pkgconfig:/usr/lib/pkgconfig
+  133  pwd
+  134  make
+  135  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0
+  136  vim Makefile 
+  137  pkg-config --exists libdpdk
+  138  pkg-config -h
+  139  pkg-config --libs
+  140  vim epoll.ini 
+  141  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0
+  142  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001
+  143  pkill -9 epoll
+  144  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001
+  145  top
+  146  vim epoll.ini 
+  147  vim start.sh 
+  148  ./start.sh -c epoll.ini -b ./echo_epoll 9001
+  149  top
+  150  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  151  top
+  152  ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=1 9002 &
+  153  top
+  154  ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=2 9003 &
+  155  top
+  156  for i in {3..25}; do port=$(( 9000+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} &
+  157  for i in {3..25}; do port=$(( 9000+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} & done
+  158  top
+  159  vim epoll.ini 
+  160  for i in {3..3}; do port=$(( 9000+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} & done
+  161  top
+  162  pwd
+  163  vim epoll.ini 
+  164   ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=3  9004
+  165  vim  epoll.ini 
+  166  pkill -9 epoll
+  167  vim start.sh 
+  168  ./start.sh -c epoll.ini -b ./echo_epoll 9001
+  169  top
+  170  history
+  171  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  172  top
+  173  history
+  174  for i in {1..25}; do port=$(( 9001+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} & done
+  175  top
+  176  ps aux | grep epoll
+  177  top
+  178  vim Makefile 
+  179  ls -ltr
+  180  vim main_epoll.c 
+  181  vim epoll.ini 
+  182  pkill epoll
+  183  top
+  184  vim epoll.ini 
+  185  history
+  186  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  187  pkill -9 epoll
+  188  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  189  pkill -9 epoll
+  190  pwd
+  191  vim ../lib/ff_dpdk_if.c 
+  192  pwd
+  193  cd ../
+  194  cd lib/
+  195  make
+  196  make install 
+  197  cd ../example/
+  198  make
+  199  top
+  200  history
+  201  /echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  202  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  203  pkill -9 epoll
+  204  history
+  205  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  206  ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=1 9002 &
+  207  pkill -9 epoll
+  208  vim epoll.ini 
+  209  pkill -9 epoll
+  210  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  211  history
+  212  for i in {1..25}; do port=$(( 9001+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} & done
+  213  pkill -9 epoll
+  214  pwd
+  215  ls -ltr
+  216  vim  launch_epoll.sh 
+  217  ./launch_epoll.sh 
+  218  ulimit -n
+  219  ulimit -n 65536
+  220  pkill -9 epoll
+  221  ./launch_epoll.sh 
+  222  netstat -tlpn
+  223  htop
+  224  sysctl -a
+  225  sysctl -a | grep maxsock
+  226  sysctl -a | grep maxconn
+  227  sysctl -h
+  228  sysctl net.core.somaxconn = 32768
+  229  sysctl -n net.core.somaxconn = 32768
+  230  sysctl -p net.core.somaxconn = 32768
+  231  sysctl -w net.core.somaxconn=32768
+  232  sysctl -a | grep maxconn
+  233  ls -ltr
+  234  ./launch_epoll.sh 
+  235  ip addr
+  236  ifconfig ens2f3 down
+  237  history | grep echo
+  238  echo 2048 > /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages
+  239   echo 0 > /proc/sys/kernel/randomize_va_space
+  240  mkdir /mnt/huge
+  241  mount -t hugetlbfs nodev /mnt/huge
+  242  pwd
+  243  make
+  244  history | grep epoll
+  245  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  246  history | grep epoll
+  247  for i in {1..25}; do port=$(( 9001+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} & done
+  248  ls -ltr
+  249  ./launch_epoll.sh 
+  250  top
+  251  vim launch_epoll.sh 
+  252  pwd
+  253  cd ..
+  254  git status 
+  255  git add -A
+  256  git status
+  257  git commit -m "Working version of epoll vanila and fstack with fdir. Noticed with fdir launching a single primary is not working. Next step debug to check fdir. issue with start.sh script. Does not work"
+  258  pwd
+  259  sysctl -w net.core.somaxconn=64768
+  260  cd example/
+  261  ls -ltr
+  262  ./launch_epoll.sh 
+  263  netstat -tlpn
+  264  htop
+  265  top
+  266  pkill -9 epoll
+  267  vim launch_epoll.sh 
+  268  ./launch_epoll.sh 
+  269  top
+  270  vim  launch_epoll.sh 
+  271  htop
+  272  pkill -9 epoll
+  273  ip addr
+  274  ifconfig ens2f3 down
+  275   echo 0 > /proc/sys/kernel/randomize_va_space
+  276  history
+  277   echo 4096  > /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages
+  278   mkdir  -p /mnt/huge
+  279  mount -t hugetlbfs nodev /mnt/huge
+  280  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  281   for i in {1..25}; do port=$(( 9001+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} & done
+  282  top
+  283  ps aux | grep epoll | wc -l
+  284  ps aux | grep epoll
+  285  pkill -9 epoll
+  286  vim epoll.ini 
+  287  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  288   for i in {1..51}; do port=$(( 9001+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} & done
+  289  top
+  290  netstat -tlpn
+  291  htop
+  292  top
+  293  p
+  294  pkill -9 epoll
+  295  ls -ltr
+  296  cd ../lib/
+  297  vim ff_epoll.c 
+  298  grep ff_mod_init -rl *
+  299  grep ff_mod_init *
+  300  vim ff_init.c 
+  301  vim ff_api.h 
+  302  pwed
+  303  pwd
+  304  cd ../app/
+  305  ls
+  306  cd redis-5.0.5/
+  307  ls
+  308  cd src/
+  309  ls
+  310  vim server.c 
+  311  pwd
+  312  cd ../..
+  313  pwd
+  314  ls
+  315  cd redis-5.0.5/
+  316  ls
+  317  cd src/
+  318  ls
+  319  cd ..
+  320  vim Makefile 
+  321  make
+  322  ls -ltr
+  323  cd src/
+  324  ls -ltr
+  325  ldd redis-server 
+  326  vim server.c 
+  327  pwd
+  328  cd ..
+  329  pwd
+  330  cd ../
+  331  cd ..
+  332  cd example/
+  333  ls
+  334  ldd  echo_epoll 
+  335  history
+  336  ls -ltr
+  337  history > DpDK_exercise_cmds.txt

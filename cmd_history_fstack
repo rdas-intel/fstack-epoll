@@ -1,0 +1,1271 @@
+    1  ip r
+    2  route -n
+    3  brctl show
+    4  pwd
+    5  tmux new -s dpdk
+    6  tmux ls
+    7  tmux a -t dpdk
+    8  tmux ls
+    9  tmux a -t dpdk
+   10  tmux ls
+   11  ls
+   12  history
+   13  history | grep pnpdata
+   14  clear
+   15  ls
+   16  tmux ls
+   17  tmux a -t dpdk
+   18  tmux ls
+   19  tmux a -t dpdk
+   20  cd dynamic_resource_control/
+   21  ls -ltr
+   22  pwd
+   23  ls -ltr
+   24  pwd
+   25  df -h
+   26  cd /Nizar/
+   27  ls -ltr
+   28  cd QoS_scripts/
+   29  ls -ltr
+   30  pwd
+   31  ls -ltr
+   32  vi launch_seljbbandrocksir.sh 
+   33  pwd
+   34  ls
+   35  pwd
+   36  cd ..
+   37  cd dynamic_resource_control/
+   38  ls -ltr
+   39  exit
+   40  df -h
+   41  pwd
+   42  cd /original_pnp/
+   43  ls -ltr
+   44  cd /Nizar/
+   45  ls -ltr
+   46  cd dynamic_resource_control/
+   47  ls 
+   48  cd monitor/
+   49  ls
+   50  cd skx_metric/
+   51  ls
+   52  vim skx_metrics.c 
+   53  pwd
+   54  cd ..
+   55  gzip -h
+   56  lsblk
+   57  cd /original_pnp/
+   58  ls -ltr
+   59  lsblk
+   60  df -h
+   61  docker ps
+   62  docker images
+   63  lsblk
+   64  cd /Nizar/
+   65  ls
+   66  lsblk
+   67  cd /original_pnp/
+   68  ls -ltr
+   69  cd vmisofile/
+   70  ls
+   71  du . -m
+   72  pwd
+   73  cd ..
+   74  rm -f vmisofile/
+   75  rm -rf vmisofile/
+   76  du -m
+   77  ls -ltr
+   78  cd rocksdbnvme/
+   79  ls
+   80  cd ..
+   81  pwd
+   82  lscpu
+   83  lsblk
+   84  pwd
+   85  df -h
+   86  cd /original_pnp/
+   87  find -name "mlc*" -print
+   88  pwd
+   89  cd 
+   90  df -h
+   91  find -name "mlc*" -print
+   92  tmux new -s aws
+   93  tmux ls
+   94  tmux a -t dpdk
+   95  aws --version
+   96  python3 --version
+   97  pip3 install awscli --upgrade --user
+   98  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   99  unzip awscliv2.zip
+  100  cd aws/
+  101  sudo ./install 
+  102  aws --version
+  103  aws configure
+  104  exit
+  105  ip r
+  106  clear
+  107  last -w
+  108  last -w |heat -10
+  109  last -w |heat -n10
+  110  last -w |head -n10
+  111  exit
+  112  last -w |head -n10
+  113  exit
+  114  dcso@123
+  115  echo dcso@123 | passwd root --stdin
+  116  exit
+  117  tmux ls
+  118  tmux a -t awk
+  119  tmux a -t aws
+  120  tmux ls
+  121  tmux a -t aws
+  122  tmux ls
+  123  tmux a -t aws
+  124  cd /Nizar/AWS-CLI/
+  125  cat aws_key_id_key.txt 
+  126  exit
+  127  tmux ls
+  128  tmxu a -t aws
+  129  tmux a -t aws
+  130  cd /Nizar/AWS-CLI/ec2-automation-script/
+  131  vim launch_ec2.sh 
+  132  tmux ls
+  133  tmux a -t aws
+  134  cd /Nizar/AWS-CLI/
+  135  ls -ltr
+  136  vim aws_key_id_key.txt 
+  137  tmux ls
+  138  ip r
+  139  pwd
+  140  ntpdate circuit.intel.com
+  141  ntpdate corp.intel.com
+  142  date
+  143  tmux a -t aws
+  144  tmux a -t aws
+  145  pwd
+  146  ls
+  147  cd /Nizar/AWS-CLI/
+  148  ls
+  149  cd ec2-automation-script/
+  150  ls
+  151  vim run_ec2_exp_nginx.sh 
+  152  exit
+  153  tmux ls
+  154  pwd
+  155  tmux new -s aws2
+  156  ls
+  157  cd /Nizar/AWS-CLI/ec2-automation-script/
+  158  ls
+  159  exit
+  160  tmux ls
+  161  tmux a -t aws
+  162  tmux new -s aws
+  163  tmux a -t aws
+  164  pwd
+  165  cd /Nizar/AWS-CLI/ec2-automation-script/
+  166  ./launch_ec2.sh intel c5.4xlarge 8 case_1 primary init 1.txt 
+  167  ./launch_ec2.sh intel c5.4xlarge 8 case_1 primary init 1.txt run_1
+  168  vim launch_ec2.sh 
+  169  ls -lrt
+  170  :q
+  171  ssh -i Intel-AWS-PKI.pem -o "StrictHostKeyChecking no" -o ProxyCommand='nc --proxy-type socks5 --proxy proxy-us.intel.com:1080 %h %p' ubuntu@ec2-3-138-137-50.us-east-2.compute.amazonaws.com
+  172  ./launch_ec2.sh intel c5.4xlarge 8 case_1 primary init 1.txt run_1
+  173  date
+  174  ssh -i Intel-AWS-PKI.pem -o "StrictHostKeyChecking no" -o ProxyCommand='nc --proxy-type socks5 --proxy proxy-us.intel.com:1080 %h %p' ubuntu@ec2-3-138-137-50.us-east-2.compute.amazonaws.com
+  175  exit
+  176  tmux a -t aws
+  177  ls -la
+  178  clear
+  179  ls -la
+  180  tmux ls
+  181  tmux a -t aws
+  182  tmux ls
+  183  tmux a -t dpdk
+  184  tmux ls
+  185  tmux a -t dpdk
+  186  tmux ls
+  187  tmux a -t aws
+  188  tmux ls
+  189  tmux a -t dpdk
+  190  cd /original_pnp/
+  191  ls -ltr
+  192  cd ripan_pnp151original/
+  193  cd emon
+  194  ls
+  195  vim run_emon_sriov.sh 
+  196  scp run_emon_sriov.sh root@10.54.44.152:/pnpdata/emon/
+  197  history | grep fed30
+  198  history | grep virsh
+  199  history | grep virt
+  200  history | grep virt-install
+  201  virsh start  fed30
+  202  cd /original_pnp/
+  203  ls -ltr
+  204  lsblk
+  205  cd /Nizar/
+  206  ls 
+  207  cd 
+  208  history | gerp vmisofile
+  209  history | grep vmisofile
+  210  ping -i ens2f0 192.168.232.253
+  211  ping -I ens2f0 192.168.232.253
+  212  ping 192.168.232.253
+  213  tmux ls
+  214  tmux new -s fstack
+  215  tmux ls
+  216  tmux a -t dpdk
+  217  cd /Nizar/AWS-CLI/
+  218  ls
+  219  ls -ltr
+  220  cd ec2-automation-script/
+  221  ls -ltr
+  222  vim run_ec2_exp_runner.sh 
+  223  vim run_ec2_exp_nginx.sh
+  224  aws help
+  225  pwd
+  226  aws  help
+  227  history | grep aws
+  228  aws describe-instances
+  229  aws describe-instance
+  230  aws --help
+  231  aws  help
+  232  aws ec2 describe-instances
+  233  aws ec2 describe-instances help
+  234  aws ec2 describe-instances --filters i-094efe77fd1cb988c
+  235  aws ec2 describe-instances --filters instance-id=i-094efe77fd1cb988c
+  236  aws ec2 describe-instances help
+  237  aws ec2 describe-instances --filters instance-id=i-094efe77fd1cb988c
+  238  pwd
+  239  source ~/.bashrc 
+  240  ssh_ec2 ec2-18-117-104-180.us-east-2.compute.amazonaws.com
+  241  vim run_ec2_exp_nginx.sh
+  242  vim run_ec2_exp_runner.sh
+  243  tmux ls
+  244  tmux a -t dpdk
+  245  cd /Nizar/AWS-CLI/
+  246  pwd
+  247  ls -ltr
+  248  pwd
+  249  cd ec2-automation-script/
+  250  ./run_ec2_exp_runner.sh intel c5.4xlarge 8 nginx 1
+  251  git remote -v
+  252  git pull
+  253  git branch -a
+  254  :
+  255  ls -ltr
+  256  git fetch
+  257  git pull
+  258  ls -ltr
+  259  tmux ls
+  260  tmux a -t aws
+  261  tmux ls
+  262  tmux a -t dpdk
+  263  dns_host_name="EC2"
+  264  text='nc --proxy-type socks5 --proxy proxy-us.intel.com:1080 %h %p' ubuntu@$dns_host_name
+  265  ssh_ec2 ec2-3-144-1-238.us-east-2.compute.amazonaws.com
+  266  tmux ls
+  267  tmux a -t aws
+  268  cd .ssh/
+  269  ls
+  270  cat known_hosts 
+  271  ls -ltr
+  272  vim authorized_keys 
+  273  pwd
+  274  cd ..
+  275  pwd
+  276  cd /Nizar/AWS-CLI/
+  277  ls -ltr
+  278  cat Intel_AWS_PKI.pem 
+  279  tmux ls 
+  280  tmux a -t dpdk
+  281  cd /etc/ssh/
+  282  ls -ltr
+  283  cat ssh_host_rsa_key.pub 
+  284  history
+  285  pwd
+  286  tmux new -s awscli
+  287  cat ~/.bashrc
+  288  pwd
+  289  cd /Nizar/AWS-CLI/
+  290  ls -ltr
+  291  cd ec2-automation-script/
+  292  ls -ltr
+  293  chmod 400 Intel-AWS-PKI.pem
+  294  ls -ltr
+  295  cd ec2_nginx_exp_dir/
+  296  ls -ltr
+  297  tmux ls
+  298  tmux a -t fstack
+  299  cd /original_pnp/ec2-f-stack/
+  300  vim README.md 
+  301  pwd
+  302  tmux ls
+  303  tmux a -t awscli
+  304  tmux ls
+  305  tmux a -t dpdk
+  306  tmux ls
+  307  tmux a -t fstack
+  308  pwd
+  309  cd /original_pnp/f-stack/
+  310  pwd
+  311  cd example/
+  312  ip r
+  313  ls -ltr
+  314  vim main_epoll_vanilla.c 
+  315  pwds
+  316  pwd
+  317  make
+  318  history | grep PKG_CONFIG_PATH
+  319  pwd
+  320  cd ..
+  321  ls
+  322  pwd
+  323  history
+  324  vim README.md 
+  325  export PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/local/lib64/pkgconfig:/usr/lib/pkgconfig
+  326  cd example/
+  327  make
+  328  ls -ltr
+  329  vim main_epoll_vanilla.c 
+  330  ./epoll_vanila 9001 1 192.168.232.251
+  331  vim main_epoll_vanilla.c 
+  332  ./epoll_vanila 9001 1 192.168.232.251
+  333  ./epoll_vanila 9001 1 "192.168.232.251"
+  334  make
+  335  ./epoll_vanila 9001 1 "192.168.232.251"
+  336  netstat -tlpn
+  337  ./epoll_vanila 9001 1 "192.168.232.251" &
+  338  netstat -tlpn
+  339  pkill epoll
+  340  netstat -tlpn
+  341  vim main_epoll_vanilla.c 
+  342  make
+  343  ./epoll_vanila 9001 1 "192.168.232.251" &
+  344  netstat -tlpn
+  345  which wrk
+  346  netstat -tlpn
+  347  pkill -9 epoll
+  348  ./epoll_vanila 9001 0 "192.168.232.251" &
+  349  ./epoll_vanila 9002 0 "192.168.232.251" &
+  350  netstat -tlpn
+  351  pkill -9 epoll
+  352  for i in {1..26}; do port=$(( 9000+i )); echo $port; done
+  353  for i in {1..26}; do port=$(( 9000+i )); ./epoll_vanila $port 0 "192.168.232.251" & ; done
+  354  for i in {1..26}; do port=$(( 9000+i )); ./epoll_vanila $port 0 "192.168.232.251" &; done
+  355  for i in {1..26}; do port=$(( 9000+i )); ./epoll_vanila $port 0 "192.168.232.251"& ; done
+  356  for i in {1..26}; do port=$(( 9000+i )); ./epoll_vanila $port 0  192.168.232.251 & ; done
+  357  for i in {1..26}; do port=$(( 9000+i )); ./epoll_vanila ${port} 0  192.168.232.251 & ; done
+  358  for i in {1..26}; do port=$(( 9000+i )); echo "./epoll_vanila ${port} 0  192.168.232.251 & "; done
+  359  ls -ltr
+  360  for i in {1..26}; do port=$(( 9000+i ));./epoll_vanila ${port} 0  192.168.232.251 & ; done
+  361  for i in {1..26}; do port=$(( 9000+i ));epoll_vanila ${port} 0  192.168.232.251 & ; done
+  362  for i in {1..26}; do port=$(( 9000+i )); epoll_vanila ${port} 0  192.168.232.251 & ; done
+  363  pwd
+  364  for i in {1..26}; do port=$(( 9000+i )); /original_pnp/f-stack/example/epoll_vanila ${port} 0  192.168.232.251 & ; done
+  365  for i in {1..26}; do port=$(( 9000+i )); /original_pnp/f-stack/example/epoll_vanila ${port} 0  "192.168.232.251" & ; done
+  366  vim launch_epoll.sh
+  367  chmod +x launch_epoll.sh 
+  368  ./launch_epoll.sh 
+  369  netstat -tlpn
+  370  top
+  371  htop
+  372  pwd
+  373  ls -ltr
+  374  pkill -9 epoll
+  375  pwd
+  376  vim start.sh 
+  377  pwd
+  378  cd ..
+  379  cd example/
+  380  ip addr
+  381  ifconfig ens2f3 down
+  382  ip r
+  383  ls -ltr
+  384  pwd
+  385  cd ..
+  386  cd dpdk/
+  387  ls -ltr
+  388  pwd
+  389  cd ../example/
+  390  make
+  391  ls -ltr
+  392  ./start.sh 9001
+  393  history | grep start
+  394  vim start.sh 
+  395  ./start.sh -c epoll.ini -b echo_epoll 9001
+  396  ./start.sh -c epoll.ini -b ./echo_epoll 9001
+  397  top
+  398  pwd
+  399  cd ..
+  400  pwd
+  401  cd dpdk/
+  402  ls
+  403  ls -ltr
+  404  rm -rf x86_64-native-linuxapp-gcc/
+  405  ifconfig ens2f3 down
+  406  history
+  407  pwd
+  408  cd ../example/
+  409  ./start.sh -c epoll.ini -b ./echo_epoll 9001
+  410  pwd
+  411  cd ..
+  412  pwd
+  413  history | grep export
+  414  pwd
+  415  ls
+  416  vim README.md 
+  417  export FF_PATH=/original_pnp/f-stack
+  418  export FF_DPDK=/original_pnp/f-stack/dpdk/x86_64-native-linuxapp-gcc
+  419  cd lib/
+  420  make
+  421  make install 
+  422  pwd
+  423  cd ../example/
+  424  make
+  425  ./start.sh -c epoll.ini -b ./echo_epoll 9001
+  426  echo 1024 > /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages
+  427  mkdir /mnt/huge
+  428  mount -t hugetlbfs nodev /mnt/huge
+  429  echo 0 > /proc/sys/kernel/randomize_va_space
+  430  vim epoll.ini 
+  431  ./start.sh -c epoll.ini -b ./echo_epoll 9001
+  432  vim start.sh 
+  433  ls -ltr
+  434  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0
+  435  vim  epoll.ini 
+  436  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0
+  437  history
+  438  export PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/local/lib64/pkgconfig:/usr/lib/pkgconfig
+  439  pwd
+  440  make
+  441  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0
+  442  vim Makefile 
+  443  pkg-config --exists libdpdk
+  444  pkg-config -h
+  445  pkg-config --libs
+  446  vim epoll.ini 
+  447  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0
+  448  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001
+  449  pkill -9 epoll
+  450  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001
+  451  top
+  452  vim epoll.ini 
+  453  vim start.sh 
+  454  ./start.sh -c epoll.ini -b ./echo_epoll 9001
+  455  top
+  456  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  457  top
+  458  ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=1 9002 &
+  459  top
+  460  ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=2 9003 &
+  461  top
+  462  for i in {3..25}; do port=$(( 9000+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} &
+  463  for i in {3..25}; do port=$(( 9000+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} & done
+  464  top
+  465  vim epoll.ini 
+  466  for i in {3..3}; do port=$(( 9000+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} & done
+  467  top
+  468  pwd
+  469  vim epoll.ini 
+  470   ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=3  9004
+  471  vim  epoll.ini 
+  472  pkill -9 epoll
+  473  vim start.sh 
+  474  ./start.sh -c epoll.ini -b ./echo_epoll 9001
+  475  top
+  476  history
+  477  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  478  top
+  479  history
+  480  for i in {1..25}; do port=$(( 9001+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} & done
+  481  top
+  482  ps aux | grep epoll
+  483  top
+  484  vim Makefile 
+  485  ls -ltr
+  486  vim main_epoll.c 
+  487  vim epoll.ini 
+  488  pkill epoll
+  489  top
+  490  vim epoll.ini 
+  491  history
+  492  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  493  pkill -9 epoll
+  494  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  495  pkill -9 epoll
+  496  pwd
+  497  vim ../lib/ff_dpdk_if.c 
+  498  pwd
+  499  cd ../
+  500  cd lib/
+  501  make
+  502  make install 
+  503  cd ../example/
+  504  make
+  505  top
+  506  history
+  507  /echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  508  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  509  pkill -9 epoll
+  510  history
+  511  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  512  ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=1 9002 &
+  513  pkill -9 epoll
+  514  vim epoll.ini 
+  515  pkill -9 epoll
+  516  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  517  history
+  518  for i in {1..25}; do port=$(( 9001+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} & done
+  519  pkill -9 epoll
+  520  pwd
+  521  ls -ltr
+  522  vim  launch_epoll.sh 
+  523  ./launch_epoll.sh 
+  524  ulimit -n
+  525  ulimit -n 65536
+  526  pkill -9 epoll
+  527  ./launch_epoll.sh 
+  528  netstat -tlpn
+  529  htop
+  530  sysctl -a
+  531  sysctl -a | grep maxsock
+  532  sysctl -a | grep maxconn
+  533  sysctl -h
+  534  sysctl net.core.somaxconn = 32768
+  535  sysctl -n net.core.somaxconn = 32768
+  536  sysctl -p net.core.somaxconn = 32768
+  537  sysctl -w net.core.somaxconn=32768
+  538  sysctl -a | grep maxconn
+  539  ls -ltr
+  540  ./launch_epoll.sh 
+  541  ip addr
+  542  ifconfig ens2f3 down
+  543  history | grep echo
+  544  echo 2048 > /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages
+  545   echo 0 > /proc/sys/kernel/randomize_va_space
+  546  mkdir /mnt/huge
+  547  mount -t hugetlbfs nodev /mnt/huge
+  548  pwd
+  549  make
+  550  history | grep epoll
+  551  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  552  history | grep epoll
+  553  for i in {1..25}; do port=$(( 9001+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} & done
+  554  ls -ltr
+  555  ./launch_epoll.sh 
+  556  top
+  557  vim launch_epoll.sh 
+  558  pwd
+  559  cd ..
+  560  git status 
+  561  git add -A
+  562  git status
+  563  git commit -m "Working version of epoll vanila and fstack with fdir. Noticed with fdir launching a single primary is not working. Next step debug to check fdir. issue with start.sh script. Does not work"
+  564  pwd
+  565  sysctl -w net.core.somaxconn=64768
+  566  cd example/
+  567  ls -ltr
+  568  ./launch_epoll.sh 
+  569  netstat -tlpn
+  570  htop
+  571  top
+  572  pkill -9 epoll
+  573  vim launch_epoll.sh 
+  574  ./launch_epoll.sh 
+  575  top
+  576  vim  launch_epoll.sh 
+  577  htop
+  578  pkill -9 epoll
+  579  ip addr
+  580  ifconfig ens2f3 down
+  581   echo 0 > /proc/sys/kernel/randomize_va_space
+  582  history
+  583   echo 4096  > /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages
+  584   mkdir  -p /mnt/huge
+  585  mount -t hugetlbfs nodev /mnt/huge
+  586  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  587   for i in {1..25}; do port=$(( 9001+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} & done
+  588  top
+  589  ps aux | grep epoll | wc -l
+  590  ps aux | grep epoll
+  591  pkill -9 epoll
+  592  vim epoll.ini 
+  593  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 &
+  594   for i in {1..51}; do port=$(( 9001+i )); ./echo_epoll --conf epoll.ini --proc-type=secondary --proc-id=${i}  ${port} & done
+  595  top
+  596  netstat -tlpn
+  597  htop
+  598  top
+  599  p
+  600  pkill -9 epoll
+  601  ls -ltr
+  602  cd ../lib/
+  603  vim ff_epoll.c 
+  604  grep ff_mod_init -rl *
+  605  grep ff_mod_init *
+  606  vim ff_init.c 
+  607  vim ff_api.h 
+  608  pwed
+  609  pwd
+  610  cd ../app/
+  611  ls
+  612  cd redis-5.0.5/
+  613  ls
+  614  cd src/
+  615  ls
+  616  vim server.c 
+  617  pwd
+  618  cd ../..
+  619  pwd
+  620  ls
+  621  cd redis-5.0.5/
+  622  ls
+  623  cd src/
+  624  ls
+  625  cd ..
+  626  vim Makefile 
+  627  make
+  628  ls -ltr
+  629  cd src/
+  630  ls -ltr
+  631  ldd redis-server 
+  632  vim server.c 
+  633  pwd
+  634  cd ..
+  635  pwd
+  636  cd ../
+  637  cd ..
+  638  cd example/
+  639  ls
+  640  ldd  echo_epoll 
+  641  history
+  642  ls -ltr
+  643  history > DpDK_exercise_cmds.txt
+  644  vim DpDK_exercise_cmds.txt 
+  645  git remote -v
+  646  git branch -a
+  647  git status 
+  648  ls -ltr
+  649  vikm launch_epoll.sh 
+  650  vim launch_epoll.sh 
+  651  vim Makefile 
+  652  vim main_epoll.c 
+  653  vim main_epoll_vanilla.c 
+  654  pwd
+  655  git log
+  656  ls -ltr
+  657  vim  start.sh 
+  658  vim DpDK_exercise_cmds.txt 
+  659  ./echo_epoll --conf epoll.ini --proc-type=primary --proc-id=0 9001 & 
+  660  ps aux | grep epoll
+  661  vim epoll.ini 
+  662  pwd
+  663  pkill -9 wrk
+  664  pwd
+  665  ls -ltr
+  666  vim main.c 
+  667  vim start.sh 
+  668  vim create_flow.c 
+  669  grep -rl create_flow *
+  670  vim Makefile 
+  671  vim main.c 
+  672  vim main_epoll.c 
+  673  ls -ltr
+  674  vim run_vanilla_epoll_exp.sh 
+  675  vim launch_epoll.sh 
+  676  ./launch_epoll.sh 
+  677  ps aux | grep epoll
+  678  netstat -tlpn
+  679  /original_pnp/f-stack/example/epoll_vanila 9047 0 "192.168.232.251" &
+  680  sudo /original_pnp/f-stack/example/epoll_vanila 9047 0 "192.168.232.251" &
+  681  make
+  682  ls -ltr
+  683  pwd
+  684  cd ..
+  685  pwd
+  686  git log
+  687  git status
+  688  ls
+  689  cd app/
+  690  ls -ltr
+  691  cd ..
+  692  ls -ltr
+  693  cd example/
+  694  ls -ltr
+  695  git log
+  696  git diff
+  697  git branch -a
+  698  git diff eth_fdir..dev
+  699  git diff dev..eth_fdir
+  700  pwd
+  701  ls -ltr
+  702  vim run_vanilla_epoll_exp.sh 
+  703  vim main_epoll_vanilla.c 
+  704  pwd
+  705  ip addr
+  706  pwd
+  707  cd ..
+  708  history 
+  709  history > cmd_history
+  710  vim cmd_history 
+  711  ip r
+  712  history | grep ifconfig
+  713  history | grep add
+  714  history | grep ifc
+  715  history | grep vrish
+  716  history | grep virsh
+  717  pwd
+  718  df -h
+  719  cd /Nizar/
+  720  ls
+  721  ls -ltr
+  722  df -h
+  723  ls /original_pnp/
+  724  history | grep fed30
+  725  history | grep virt
+  726  ip addr
+  727  ethtool -i ens2f0
+  728  vim /etc/networks 
+  729  vim /etc/sysconfig/network-scripts/ifcfg-enp2so 
+  730  vim /etc/sysconfig/network-scripts/ifcfg-ens2f0 
+  731  ifdown ens2f0 
+  732  ifup ens2f0 
+  733  ip r
+  734  ifup ens2f1
+  735  ip r
+  736  tcpdump -i ens2f1
+  737  pwd
+  738  cd /original_pnp/ec2-f-stack/
+  739  ls
+  740  vim README.md 
+  741  ip r
+  742  git fetch
+  743  git pull
+  744  ls -ltr
+  745  ps aux | grep dpdk
+  746  pkill -9 dpdk-setup.s
+  747  ip addr
+  748  ifdown  ens2f2
+  749  ifup  ens2f2
+  750  ifup  ens2f3
+  751  ifconfig ens2f1 down
+  752  pwd
+  753  git fetch 
+  754  git pull
+  755  ls -ltr
+  756  pwd
+  757  vim README.md 
+  758  ip addr
+  759  pwd
+  760  cd dpdk/usertools/
+  761  ./dpdk-setup.sh 
+  762  pwd
+  763  ./dpdk-devbind.py --help
+  764  ./dpdk-devbind.py --status
+  765  modprobe vfio-pci
+  766  ./dpdk-devbind.py --help
+  767  ./dpdk-devbind.py --status
+  768  dpdk-devbind.py -u 0000:b3:00.1
+  769  ./dpdk-devbind.py --status
+  770  dpdk-devbind.py --bind=vfio-pci 0000:b3:00.1 
+  771  pwd
+  772  cd ../..
+  773  vim README.md 
+  774  git diff
+  775  git status 
+  776  git Add -A
+  777  git add -A
+  778  git status 
+  779  git commit -m "Updated read.me. inlcuded i40e NIC failing to work with dpdk if binded to igb_uio. But need to bind to vfio-pci instead"
+  780  git statau
+  781  git status
+  782  pushd ~./ssh
+  783  pushd ~/.ssh
+  784  pwd
+  785  ls
+  786  pwd
+  787  ls -ltr
+  788  cd ..
+  789  pwd
+  790  ls
+  791  ssh-keygen -t rsa
+  792  cd /etc/ssh/
+  793  ls
+  794  ls -ltr
+  795  cat ssh_host_rsa_key.pub
+  796  pop
+  797  pwd
+  798  cd /Nizar/AWS-CLI/
+  799  cd ec2-automation-script/
+  800  ls
+  801  vim run_ec2_exp_nginx.sh
+  802  cat ~/.bashrc
+  803  history
+  804  pwd
+  805  ls
+  806  pwd
+  807  exit
+  808  tmux ls
+  809  tmux a -t dpdk
+  810  pwd
+  811  tmux ls
+  812  tmux new -s aws-serv
+  813  pwd
+  814  ls -ltr
+  815  ssh_ec2 ec2-3-135-39-195.us-east-2.compute.amazonaws.com
+  816  tmux ls
+  817  tmux --help
+  818  help tmux
+  819  tmux -h
+  820  history | grep ssh
+  821  tmux ls
+  822  tmux kill-session -t aws-serv
+  823  tmux ls
+  824  tmux a -t asw-serv
+  825  tmux a -t aws-serv
+  826  tmux ls
+  827  tmux new -s aws-serv
+  828  ssh_ec2 client
+  829  echo $client
+  830  vim .bashrc
+  831  ssh_ec2 $client
+  832  tmux new -s aws-client
+  833  vim .bashrc
+  834  source .bashrc 
+  835  tmux ls
+  836  tmux a -t aws-serv
+  837  exit
+  838  tmux ls
+  839  tmux a -t aws-serv
+  840  cd /original_pnp/ec2-f-stack/
+  841  ls -ltr
+  842  pwd
+  843  pwd
+  844  echo $client
+  845  ssh_ec2  ec2-3-135-39-195.us-east-2.compute.amazonaws.com
+  846  cat .bashrc
+  847  echo $serv
+  848  echo $clinet
+  849  echo $client
+  850  tmux ls
+  851  tmux a -t aws-client
+  852  tmux ls
+  853  tmux a -t aws-serv
+  854  exit
+  855  tmux ls
+  856  tmux a -t fstack
+  857  tmux ls
+  858  tmux a -t aws-client
+  859  tmux ls
+  860  tmux a -t aws-serv
+  861  ls /sys/class/net
+  862  lspci | grep -i net
+  863  ethtool -i enp103s0f0
+  864  ethtool -i ens2f0
+  865  exit
+  866  netstat -tlpn
+  867  htop
+  868  ip addr
+  869  ip r
+  870  ethtool --show-features ens2f2
+  871  ethtool --show-features ens2f2 | less
+  872  ethtool --show-features ens2f2  help
+  873  ethtool --show-features ens2f2  -h
+  874  ethtool --show-features -h
+  875* ethtool --show-features 
+  876  ethtool --show-features ens2f2  --help
+  877  man ethtool | less
+  878  ethtool --show-features ens2f2  | grep ntuple
+  879  lshw -c network -businfo
+  880  man ethtool | less
+  881  ethtool -u ens2f2
+  882  ethtool -n ens2f2
+  883  ethtool -g ens2f2
+  884  ethtool -l ens2f2
+  885  man ethtool 
+  886  pwd
+  887  htop
+  888  ethtool -n ens2f2
+  889  ethtool -N ens2f2 flow-type tcp4 dst-ip 192.168.232.254 dst-port 9001 action 1
+  890  ethtool -N ens2f2 flow-type tcp4 dst-ip 192.168.232.254 dst-port 9002 action 2
+  891  ethtool -n ens2f2
+  892  htop
+  893  ethtool -n ens2f2
+  894  ethtool -N ens2f2 delete 7422
+  895  ethtool -N ens2f2 delete 7423
+  896  ethtool -n ens2f2
+  897  htop
+  898  ethtool -N ens2f2 flow-type tcp4 dst-ip 192.168.232.254 dst-port 9002 action -1
+  899  ethtool -n ens2f2
+  900  history
+  901  history | grep ethtool
+  902   ethtool -g ens2f2
+  903   ethtool -n ens2f2
+  904  echo $serv 
+  905  echo $client 
+  906  echo $client
+  907  pwd
+  908  history
+  909  history > cmd_fstack2
+    1  ip r
+    2  route -n
+    3  brctl show
+    4  pwd
+    5  tmux new -s dpdk
+    6  tmux ls
+    7  tmux a -t dpdk
+    8  tmux ls
+    9  tmux a -t dpdk
+   10  tmux ls
+   11  ls
+   12  history
+   13  history | grep pnpdata
+   14  clear
+   15  ls
+   16  tmux ls
+   17  tmux a -t dpdk
+   18  tmux ls
+   19  tmux a -t dpdk
+   20  cd dynamic_resource_control/
+   21  ls -ltr
+   22  pwd
+   23  ls -ltr
+   24  pwd
+   25  df -h
+   26  cd /Nizar/
+   27  ls -ltr
+   28  cd QoS_scripts/
+   29  ls -ltr
+   30  pwd
+   31  ls -ltr
+   32  vi launch_seljbbandrocksir.sh 
+   33  pwd
+   34  ls
+   35  pwd
+   36  cd ..
+   37  cd dynamic_resource_control/
+   38  ls -ltr
+   39  exit
+   40  df -h
+   41  pwd
+   42  cd /original_pnp/
+   43  ls -ltr
+   44  cd /Nizar/
+   45  ls -ltr
+   46  cd dynamic_resource_control/
+   47  ls 
+   48  cd monitor/
+   49  ls
+   50  cd skx_metric/
+   51  ls
+   52  vim skx_metrics.c 
+   53  pwd
+   54  cd ..
+   55  gzip -h
+   56  lsblk
+   57  cd /original_pnp/
+   58  ls -ltr
+   59  lsblk
+   60  df -h
+   61  docker ps
+   62  docker images
+   63  lsblk
+   64  cd /Nizar/
+   65  ls
+   66  lsblk
+   67  cd /original_pnp/
+   68  ls -ltr
+   69  cd vmisofile/
+   70  ls
+   71  du . -m
+   72  pwd
+   73  cd ..
+   74  rm -f vmisofile/
+   75  rm -rf vmisofile/
+   76  du -m
+   77  ls -ltr
+   78  cd rocksdbnvme/
+   79  ls
+   80  cd ..
+   81  pwd
+   82  lscpu
+   83  lsblk
+   84  pwd
+   85  df -h
+   86  cd /original_pnp/
+   87  find -name "mlc*" -print
+   88  pwd
+   89  cd 
+   90  df -h
+   91  find -name "mlc*" -print
+   92  tmux new -s aws
+   93  tmux ls
+   94  tmux a -t dpdk
+   95  aws --version
+   96  python3 --version
+   97  pip3 install awscli --upgrade --user
+   98  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   99  unzip awscliv2.zip
+  100  cd aws/
+  101  sudo ./install 
+  102  aws --version
+  103  aws configure
+  104  exit
+  105  ip r
+  106  clear
+  107  last -w
+  108  last -w |heat -10
+  109  last -w |heat -n10
+  110  last -w |head -n10
+  111  exit
+  112  last -w |head -n10
+  113  exit
+  114  dcso@123
+  115  echo dcso@123 | passwd root --stdin
+  116  exit
+  117  tmux ls
+  118  tmux a -t awk
+  119  tmux a -t aws
+  120  tmux ls
+  121  tmux a -t aws
+  122  tmux ls
+  123  tmux a -t aws
+  124  cd /Nizar/AWS-CLI/
+  125  cat aws_key_id_key.txt 
+  126  exit
+  127  tmux ls
+  128  tmxu a -t aws
+  129  tmux a -t aws
+  130  cd /Nizar/AWS-CLI/ec2-automation-script/
+  131  vim launch_ec2.sh 
+  132  tmux ls
+  133  tmux a -t aws
+  134  cd /Nizar/AWS-CLI/
+  135  ls -ltr
+  136  vim aws_key_id_key.txt 
+  137  tmux ls
+  138  ip r
+  139  pwd
+  140  ntpdate circuit.intel.com
+  141  ntpdate corp.intel.com
+  142  date
+  143  tmux a -t aws
+  144  tmux a -t aws
+  145  pwd
+  146  ls
+  147  cd /Nizar/AWS-CLI/
+  148  ls
+  149  cd ec2-automation-script/
+  150  ls
+  151  vim run_ec2_exp_nginx.sh 
+  152  exit
+  153  tmux ls
+  154  pwd
+  155  tmux new -s aws2
+  156  ls
+  157  cd /Nizar/AWS-CLI/ec2-automation-script/
+  158  ls
+  159  exit
+  160  tmux ls
+  161  tmux a -t aws
+  162  tmux new -s aws
+  163  tmux a -t aws
+  164  pwd
+  165  cd /Nizar/AWS-CLI/ec2-automation-script/
+  166  ./launch_ec2.sh intel c5.4xlarge 8 case_1 primary init 1.txt 
+  167  ./launch_ec2.sh intel c5.4xlarge 8 case_1 primary init 1.txt run_1
+  168  vim launch_ec2.sh 
+  169  ls -lrt
+  170  :q
+  171  ssh -i Intel-AWS-PKI.pem -o "StrictHostKeyChecking no" -o ProxyCommand='nc --proxy-type socks5 --proxy proxy-us.intel.com:1080 %h %p' ubuntu@ec2-3-138-137-50.us-east-2.compute.amazonaws.com
+  172  ./launch_ec2.sh intel c5.4xlarge 8 case_1 primary init 1.txt run_1
+  173  date
+  174  ssh -i Intel-AWS-PKI.pem -o "StrictHostKeyChecking no" -o ProxyCommand='nc --proxy-type socks5 --proxy proxy-us.intel.com:1080 %h %p' ubuntu@ec2-3-138-137-50.us-east-2.compute.amazonaws.com
+  175  exit
+  176  tmux a -t aws
+  177  ls -la
+  178  clear
+  179  ls -la
+  180  tmux ls
+  181  tmux a -t aws
+  182  tmux ls
+  183  tmux a -t dpdk
+  184  tmux ls
+  185  tmux a -t dpdk
+  186  tmux ls
+  187  tmux a -t aws
+  188  tmux ls
+  189  tmux a -t dpdk
+  190  cd /original_pnp/
+  191  ls -ltr
+  192  cd ripan_pnp151original/
+  193  cd emon
+  194  ls
+  195  vim run_emon_sriov.sh 
+  196  scp run_emon_sriov.sh root@10.54.44.152:/pnpdata/emon/
+  197  cd /original_pnp/ec2-f-stack/
+  198  ls
+  199  ip addr
+  200  virsh list -a
+  201  virsh list all
+  202  virsh list --all
+  203  vim README.md 
+  204  pwd
+  205  cd /Nizar/AWS-CLI/ec2-automation-script/
+  206  ls
+  207  ls -ltr
+  208  vim run_ec2_exp_nginx.sh 
+  209  diff launch_ec2.sh  run_ec2_exp_nginx.sh 
+  210  vim  run_ec2_exp_runner.sh 
+  211  pwd
+  212  history
+  213  pwd
+  214  cd /original_pnp/
+  215  ls -ltr
+  216  cd ec2-f-stack/
+  217  ls -ltr
+  218  cd dpdk/usertools/
+  219  ./dpdk-devbind.py --status
+  220  pwd
+  221  ps aux | grep epoll
+  222  pkill -9 helloworld_epoll
+  223  ps aux | grep epoll
+  224  pkill -9 helloworld
+  225  ps aux | grep epoll
+  226  pwd
+  227  cd ../../
+  228  cd lib/
+  229  ls
+  230  echo $FF_PATH
+  231  history | grep export
+  232  pwd
+  233  export FF_PATH=/original_pnp/ec2-f-stack
+  234  export FF_DPDK=/original_pnp/ec2-f-stack/dpdk/x86_64-native-linuxapp-gcc
+  235  make
+  236  pwd
+  237  cd ../app/nginx-1.16.1/
+  238  ls -ltr
+  239  pwd
+  240  ls
+  241  pwd
+  242  ./configure --prefix=/original_pnp/nginx_fstack --with-ff_module
+  243  make
+  244  make install
+  245  pwd
+  246  ls -ltr
+  247  ./configure --prefix=/original_pnp/nginx_fstack --with-ff_module
+  248  cat /etc/redhat-release 
+  249  yum install pcre  pcre-devel
+  250  ./configure --prefix=/original_pnp/nginx_fstack --with-ff_module
+  251  yum install zlib zlib-devel
+  252  yum install openssl  openssl-devel
+  253  ./configure --prefix=/original_pnp/nginx_fstack --with-ff_module
+  254  make
+  255  vim src/event/modules/ngx_ff_module.c 
+  256  make
+  257  vim src/event/modules/ngx_ff_module.c 
+  258  make
+  259  make install
+  260  cd /original_pnp/nginx_fstack/
+  261  ls
+  262  vim conf/f-stack.conf 
+  263  vim conf/nginx.conf
+  264  sbin/nginx -c /original_pnp/nginx_fstack/conf/nginx.conf
+  265  ps aux | grep nginx
+  266  ls -ltr
+  267  history
+  268  vim src/event/modules/ngx_ff_module.c
+  269  vim ../ec2-f-stack/app/nginx-1.16.1/src/event/modules/ngx_ff_module.c
+  270  vim ../ec2-f-stack/app/nginx-1.16.1/src/os/unix/ngx_process_cycle.c 
+  271  ps aux | grep nginx
+  272  vim conf/nginx.conf
+  273  pwd
+  274  cd ..
+  275  pwd
+  276  ls
+  277  cd f-stack/
+  278  ls -ltr cd example/
+  279  ls -ltr
+  280  pwd
+  281  cd example/
+  282  ls -ltr
+  283  pwd
+  284  vim run_vanilla_epoll_exp.sh 
+  285  vim main_epoll_vanilla.c 
+  286  ip r
+  287  vim main_epoll_vanilla.c 
+  288  make
+  289  ./epoll_vanila 9001 1
+  290  netstat -tlpn
+  291  ps aux | grep epoll
+  292  make
+  293  vim main_epoll_vanilla.c 
+  294  vim Makefile 
+  295  ./epoll_vanila "9001"  "1"
+  296  vim main_epoll_vanilla.c
+  297  make
+  298  pwd
+  299  vim run_vanilla_epoll_exp.sh 
+  300  gcc main_epoll_vanilla.c -o epoll_vanilla
+  301  ./epoll_vanila "9001"  "1"
+  302  vim  main_epoll_vanilla.c 
+  303  gcc main_epoll_vanilla.c -o epoll_vanilla
+  304  ./epoll_vanila "9001"  "1"
+  305  vim  main_epoll_vanilla.c 
+  306  gcc main_epoll_vanilla.c -o epoll_vanilla
+  307  ./epoll_vanila "9001"  "1"
+  308  ./epoll_vanila 9001  1
+  309  vim main_epoll_vanilla.c 
+  310  gcc -o epoll_vanilla main_epoll_vanilla.c 
+  311  vim main_epoll_vanilla.c 
+  312  gcc -o epoll_vanilla main_epoll_vanilla.c 
+  313  ./epoll_vanila 9001  1
+  314  vim main_epoll_vanilla.c 
+  315  gcc -o epoll_vanilla main_epoll_vanilla.c 
+  316  ./epoll_vanila 9001  1
+  317  vim main_epoll_vanilla.c 
+  318  gcc -o epoll_vanilla main_epoll_vanilla.c 
+  319  ./epoll_vanila 9001  1
+  320  ls -ltr
+  321  rm -f epoll_vanila 
+  322  ./epoll_vanila 9001  1
+  323  ./epoll_vanilla 9001 1
+  324  ./epoll_vanilla 9001 1 &
+  325  netstat -tlpn
+  326  vim main_epoll_vanilla.c 
+  327  vim run_vanilla_epoll_exp.sh 
+  328  chmod +x run_vanilla_epoll_exp.sh 
+  329  epoll_vanilla
+  330  ls epoll_vanilla
+  331  ./run_vanilla_epoll_exp.sh 2
+  332  netstat -tlpn
+  333  echo -e "*1\r\n\$4\r\nPING\r\n"
+  334  man ethtool 
+  335  ps aux | grep epoll
+  336  pkill -9 epoll
+  337  ip r
+  338  ethtool -n ens2f2
+  339  lscpu
+  340  history
+  341  vim run_vanilla_epoll_exp.sh 
+  342  ./run_vanilla_epoll_exp.sh 2
+  343  netstat -tlpn
+  344  pkill -9 epoll
+  345  netstat -tlpn
+  346  vi run_vanilla_epoll_exp.sh 
+  347  netstat -tlpn
+  348  ./run_vanilla_epoll_exp.sh 2
+  349  pkill -9 epoll
+  350  netstat -tlpn
+  351  ./run_vanilla_epoll_exp.sh 2
+  352  history
+  353  pwd
+  354  ls -ltr
+  355  git branch -a
+  356  git log
+  357  ls -ltr
+  358  pwd
+  359  vim start.sh 
+  360  pwd
+  361  history
+  362  history > cmd_fstack1

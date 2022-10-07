@@ -1,0 +1,362 @@
+    1  ip r
+    2  route -n
+    3  brctl show
+    4  pwd
+    5  tmux new -s dpdk
+    6  tmux ls
+    7  tmux a -t dpdk
+    8  tmux ls
+    9  tmux a -t dpdk
+   10  tmux ls
+   11  ls
+   12  history
+   13  history | grep pnpdata
+   14  clear
+   15  ls
+   16  tmux ls
+   17  tmux a -t dpdk
+   18  tmux ls
+   19  tmux a -t dpdk
+   20  cd dynamic_resource_control/
+   21  ls -ltr
+   22  pwd
+   23  ls -ltr
+   24  pwd
+   25  df -h
+   26  cd /Nizar/
+   27  ls -ltr
+   28  cd QoS_scripts/
+   29  ls -ltr
+   30  pwd
+   31  ls -ltr
+   32  vi launch_seljbbandrocksir.sh 
+   33  pwd
+   34  ls
+   35  pwd
+   36  cd ..
+   37  cd dynamic_resource_control/
+   38  ls -ltr
+   39  exit
+   40  df -h
+   41  pwd
+   42  cd /original_pnp/
+   43  ls -ltr
+   44  cd /Nizar/
+   45  ls -ltr
+   46  cd dynamic_resource_control/
+   47  ls 
+   48  cd monitor/
+   49  ls
+   50  cd skx_metric/
+   51  ls
+   52  vim skx_metrics.c 
+   53  pwd
+   54  cd ..
+   55  gzip -h
+   56  lsblk
+   57  cd /original_pnp/
+   58  ls -ltr
+   59  lsblk
+   60  df -h
+   61  docker ps
+   62  docker images
+   63  lsblk
+   64  cd /Nizar/
+   65  ls
+   66  lsblk
+   67  cd /original_pnp/
+   68  ls -ltr
+   69  cd vmisofile/
+   70  ls
+   71  du . -m
+   72  pwd
+   73  cd ..
+   74  rm -f vmisofile/
+   75  rm -rf vmisofile/
+   76  du -m
+   77  ls -ltr
+   78  cd rocksdbnvme/
+   79  ls
+   80  cd ..
+   81  pwd
+   82  lscpu
+   83  lsblk
+   84  pwd
+   85  df -h
+   86  cd /original_pnp/
+   87  find -name "mlc*" -print
+   88  pwd
+   89  cd 
+   90  df -h
+   91  find -name "mlc*" -print
+   92  tmux new -s aws
+   93  tmux ls
+   94  tmux a -t dpdk
+   95  aws --version
+   96  python3 --version
+   97  pip3 install awscli --upgrade --user
+   98  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   99  unzip awscliv2.zip
+  100  cd aws/
+  101  sudo ./install 
+  102  aws --version
+  103  aws configure
+  104  exit
+  105  ip r
+  106  clear
+  107  last -w
+  108  last -w |heat -10
+  109  last -w |heat -n10
+  110  last -w |head -n10
+  111  exit
+  112  last -w |head -n10
+  113  exit
+  114  dcso@123
+  115  echo dcso@123 | passwd root --stdin
+  116  exit
+  117  tmux ls
+  118  tmux a -t awk
+  119  tmux a -t aws
+  120  tmux ls
+  121  tmux a -t aws
+  122  tmux ls
+  123  tmux a -t aws
+  124  cd /Nizar/AWS-CLI/
+  125  cat aws_key_id_key.txt 
+  126  exit
+  127  tmux ls
+  128  tmxu a -t aws
+  129  tmux a -t aws
+  130  cd /Nizar/AWS-CLI/ec2-automation-script/
+  131  vim launch_ec2.sh 
+  132  tmux ls
+  133  tmux a -t aws
+  134  cd /Nizar/AWS-CLI/
+  135  ls -ltr
+  136  vim aws_key_id_key.txt 
+  137  tmux ls
+  138  ip r
+  139  pwd
+  140  ntpdate circuit.intel.com
+  141  ntpdate corp.intel.com
+  142  date
+  143  tmux a -t aws
+  144  tmux a -t aws
+  145  pwd
+  146  ls
+  147  cd /Nizar/AWS-CLI/
+  148  ls
+  149  cd ec2-automation-script/
+  150  ls
+  151  vim run_ec2_exp_nginx.sh 
+  152  exit
+  153  tmux ls
+  154  pwd
+  155  tmux new -s aws2
+  156  ls
+  157  cd /Nizar/AWS-CLI/ec2-automation-script/
+  158  ls
+  159  exit
+  160  tmux ls
+  161  tmux a -t aws
+  162  tmux new -s aws
+  163  tmux a -t aws
+  164  pwd
+  165  cd /Nizar/AWS-CLI/ec2-automation-script/
+  166  ./launch_ec2.sh intel c5.4xlarge 8 case_1 primary init 1.txt 
+  167  ./launch_ec2.sh intel c5.4xlarge 8 case_1 primary init 1.txt run_1
+  168  vim launch_ec2.sh 
+  169  ls -lrt
+  170  :q
+  171  ssh -i Intel-AWS-PKI.pem -o "StrictHostKeyChecking no" -o ProxyCommand='nc --proxy-type socks5 --proxy proxy-us.intel.com:1080 %h %p' ubuntu@ec2-3-138-137-50.us-east-2.compute.amazonaws.com
+  172  ./launch_ec2.sh intel c5.4xlarge 8 case_1 primary init 1.txt run_1
+  173  date
+  174  ssh -i Intel-AWS-PKI.pem -o "StrictHostKeyChecking no" -o ProxyCommand='nc --proxy-type socks5 --proxy proxy-us.intel.com:1080 %h %p' ubuntu@ec2-3-138-137-50.us-east-2.compute.amazonaws.com
+  175  exit
+  176  tmux a -t aws
+  177  ls -la
+  178  clear
+  179  ls -la
+  180  tmux ls
+  181  tmux a -t aws
+  182  tmux ls
+  183  tmux a -t dpdk
+  184  tmux ls
+  185  tmux a -t dpdk
+  186  tmux ls
+  187  tmux a -t aws
+  188  tmux ls
+  189  tmux a -t dpdk
+  190  cd /original_pnp/
+  191  ls -ltr
+  192  cd ripan_pnp151original/
+  193  cd emon
+  194  ls
+  195  vim run_emon_sriov.sh 
+  196  scp run_emon_sriov.sh root@10.54.44.152:/pnpdata/emon/
+  197  cd /original_pnp/ec2-f-stack/
+  198  ls
+  199  ip addr
+  200  virsh list -a
+  201  virsh list all
+  202  virsh list --all
+  203  vim README.md 
+  204  pwd
+  205  cd /Nizar/AWS-CLI/ec2-automation-script/
+  206  ls
+  207  ls -ltr
+  208  vim run_ec2_exp_nginx.sh 
+  209  diff launch_ec2.sh  run_ec2_exp_nginx.sh 
+  210  vim  run_ec2_exp_runner.sh 
+  211  pwd
+  212  history
+  213  pwd
+  214  cd /original_pnp/
+  215  ls -ltr
+  216  cd ec2-f-stack/
+  217  ls -ltr
+  218  cd dpdk/usertools/
+  219  ./dpdk-devbind.py --status
+  220  pwd
+  221  ps aux | grep epoll
+  222  pkill -9 helloworld_epoll
+  223  ps aux | grep epoll
+  224  pkill -9 helloworld
+  225  ps aux | grep epoll
+  226  pwd
+  227  cd ../../
+  228  cd lib/
+  229  ls
+  230  echo $FF_PATH
+  231  history | grep export
+  232  pwd
+  233  export FF_PATH=/original_pnp/ec2-f-stack
+  234  export FF_DPDK=/original_pnp/ec2-f-stack/dpdk/x86_64-native-linuxapp-gcc
+  235  make
+  236  pwd
+  237  cd ../app/nginx-1.16.1/
+  238  ls -ltr
+  239  pwd
+  240  ls
+  241  pwd
+  242  ./configure --prefix=/original_pnp/nginx_fstack --with-ff_module
+  243  make
+  244  make install
+  245  pwd
+  246  ls -ltr
+  247  ./configure --prefix=/original_pnp/nginx_fstack --with-ff_module
+  248  cat /etc/redhat-release 
+  249  yum install pcre  pcre-devel
+  250  ./configure --prefix=/original_pnp/nginx_fstack --with-ff_module
+  251  yum install zlib zlib-devel
+  252  yum install openssl  openssl-devel
+  253  ./configure --prefix=/original_pnp/nginx_fstack --with-ff_module
+  254  make
+  255  vim src/event/modules/ngx_ff_module.c 
+  256  make
+  257  vim src/event/modules/ngx_ff_module.c 
+  258  make
+  259  make install
+  260  cd /original_pnp/nginx_fstack/
+  261  ls
+  262  vim conf/f-stack.conf 
+  263  vim conf/nginx.conf
+  264  sbin/nginx -c /original_pnp/nginx_fstack/conf/nginx.conf
+  265  ps aux | grep nginx
+  266  ls -ltr
+  267  history
+  268  vim src/event/modules/ngx_ff_module.c
+  269  vim ../ec2-f-stack/app/nginx-1.16.1/src/event/modules/ngx_ff_module.c
+  270  vim ../ec2-f-stack/app/nginx-1.16.1/src/os/unix/ngx_process_cycle.c 
+  271  ps aux | grep nginx
+  272  vim conf/nginx.conf
+  273  pwd
+  274  cd ..
+  275  pwd
+  276  ls
+  277  cd f-stack/
+  278  ls -ltr cd example/
+  279  ls -ltr
+  280  pwd
+  281  cd example/
+  282  ls -ltr
+  283  pwd
+  284  vim run_vanilla_epoll_exp.sh 
+  285  vim main_epoll_vanilla.c 
+  286  ip r
+  287  vim main_epoll_vanilla.c 
+  288  make
+  289  ./epoll_vanila 9001 1
+  290  netstat -tlpn
+  291  ps aux | grep epoll
+  292  make
+  293  vim main_epoll_vanilla.c 
+  294  vim Makefile 
+  295  ./epoll_vanila "9001"  "1"
+  296  vim main_epoll_vanilla.c
+  297  make
+  298  pwd
+  299  vim run_vanilla_epoll_exp.sh 
+  300  gcc main_epoll_vanilla.c -o epoll_vanilla
+  301  ./epoll_vanila "9001"  "1"
+  302  vim  main_epoll_vanilla.c 
+  303  gcc main_epoll_vanilla.c -o epoll_vanilla
+  304  ./epoll_vanila "9001"  "1"
+  305  vim  main_epoll_vanilla.c 
+  306  gcc main_epoll_vanilla.c -o epoll_vanilla
+  307  ./epoll_vanila "9001"  "1"
+  308  ./epoll_vanila 9001  1
+  309  vim main_epoll_vanilla.c 
+  310  gcc -o epoll_vanilla main_epoll_vanilla.c 
+  311  vim main_epoll_vanilla.c 
+  312  gcc -o epoll_vanilla main_epoll_vanilla.c 
+  313  ./epoll_vanila 9001  1
+  314  vim main_epoll_vanilla.c 
+  315  gcc -o epoll_vanilla main_epoll_vanilla.c 
+  316  ./epoll_vanila 9001  1
+  317  vim main_epoll_vanilla.c 
+  318  gcc -o epoll_vanilla main_epoll_vanilla.c 
+  319  ./epoll_vanila 9001  1
+  320  ls -ltr
+  321  rm -f epoll_vanila 
+  322  ./epoll_vanila 9001  1
+  323  ./epoll_vanilla 9001 1
+  324  ./epoll_vanilla 9001 1 &
+  325  netstat -tlpn
+  326  vim main_epoll_vanilla.c 
+  327  vim run_vanilla_epoll_exp.sh 
+  328  chmod +x run_vanilla_epoll_exp.sh 
+  329  epoll_vanilla
+  330  ls epoll_vanilla
+  331  ./run_vanilla_epoll_exp.sh 2
+  332  netstat -tlpn
+  333  echo -e "*1\r\n\$4\r\nPING\r\n"
+  334  man ethtool 
+  335  ps aux | grep epoll
+  336  pkill -9 epoll
+  337  ip r
+  338  ethtool -n ens2f2
+  339  lscpu
+  340  history
+  341  vim run_vanilla_epoll_exp.sh 
+  342  ./run_vanilla_epoll_exp.sh 2
+  343  netstat -tlpn
+  344  pkill -9 epoll
+  345  netstat -tlpn
+  346  vi run_vanilla_epoll_exp.sh 
+  347  netstat -tlpn
+  348  ./run_vanilla_epoll_exp.sh 2
+  349  pkill -9 epoll
+  350  netstat -tlpn
+  351  ./run_vanilla_epoll_exp.sh 2
+  352  history
+  353  pwd
+  354  ls -ltr
+  355  git branch -a
+  356  git log
+  357  ls -ltr
+  358  pwd
+  359  vim start.sh 
+  360  pwd
+  361  history
+  362  history > cmd_fstack1

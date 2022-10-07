@@ -1,0 +1,349 @@
+    1  pwd
+    2  cd /original_pnp/
+    3  cd wrk/
+    4  ls
+    5  ./wrk -h
+    6  ./wrk  -t 10 -c 1000 -d 1s --latency http://192.168.232.251:9001
+    7  ./wrk  -t 10 -c 1 -d 1s --latency http://192.168.232.251:9001
+    8  ./wrk  -t 1 -c 1 -d 1s --latency http://192.168.232.251:9001
+    9  service firewalld status
+   10  service firewalld stop
+   11  service firewalld status
+   12  ulimit -n
+   13  ulimit -n 66566
+   14  htop
+   15  lscpu
+   16  pwd
+   17  cd ..
+   18  cd f-stack/dpdk/usertools/
+   19  ./dpdk-setup.sh 
+   20  ./dpdk-devbind.py --status
+   21  ./dpdk-setup.sh 
+   22  pwd
+   23  cd ..
+   24  ls
+   25  cd x86_64-native-linuxapp-gcc/
+   26  ls
+   27  cd kmod/
+   28  ls
+   29  pwd
+   30  cd ../
+   31  ls -ltr
+   32  cd ..
+   33  cd usertools/
+   34  ./dpdk-setup.sh 
+   35  pwd
+   36  ./dpdk-setup.sh 
+   37  pwd
+   38  history | grep start
+   39  pwd
+   40  ./dpdk-devbind.py --status
+   41  ./dpdk-setup.sh 
+   42  pwd
+   43  modprobe vfio-pci
+   44  ./dpdk-devbind.py --status
+   45  history
+   46  ./dpdk-setup.sh 
+   47  ./dpdk-devbind.py --status
+   48  ./dpdk-devbind.py --bind=vfio-pci 0000:b3:00.3
+   49  ./dpdk-devbind.py --status
+   50  pwd
+   51  history
+   52  history | grep export
+   53  pwd
+   54  cd ../..
+   55  vim README.md 
+   56  pwd
+   57  cd dpdk/usertools/
+   58  ./dpdk-setup.sh 
+   59  ip r
+   60  ps aux | grep epoll
+   61  top
+   62  netstat -tlpn
+   63  history | grep fire
+   64  service firewalld status
+   65  service firewalld start
+   66  service firewalld status
+   67  ip r
+   68  ifdown ens2f0
+   69  ifdown ens2f1
+   70  ifdown ens2f2
+   71  top
+   72  htop
+   73  ./dpdk-devbind.py --status
+   74  ./dpdk-devbind.py -h
+   75  ./dpdk-devbind.py --help
+   76  ./dpdk-devbind.py --status
+   77  ./dpdk-devbind.py -u 0000:b3:00.3
+   78  ./dpdk-devbind.py --status
+   79  ./dpdk-devbind.py --help
+   80  ./dpdk-devbind.py --bind=i40e 0000:b3:00.3
+   81  ./dpdk-devbind.py --status
+   82  ./dpdk-setup.sh 
+   83  ip r
+   84  ip addr
+   85  service firewalld stop
+   86  sysctl -a
+   87  sysctl -a | grep somax
+   88  pkill -9 epoll
+   89  cd ..
+   90  pwd
+   91  cd ..
+   92  pwd
+   93  ls
+   94  vim example/epoll.ini 
+   95  htop
+   96  pkill -9 epoll
+   97  pwd
+   98  cd dpdk/usertools/
+   99  ./dpdk-devbind.py --status
+  100  ./dpdk-devbind.py --bind=vfio-pci 0000:b3:00.3
+  101  ./dpdk-devbind.py --status
+  102  top
+  103  pkill -9 epoll
+  104  pwd
+  105  ./dpdk-setup.sh 
+  106  ip addr
+  107  ./dpdk-devbind.py --status
+  108  top
+  109  pkill -9 epoll
+  110  ./dpdk-devbind.py --status
+  111  ./dpdk-devbind.py --bind=vfio-pci 0000:b3:00.3
+  112  ./dpdk-devbind.py --status
+  113  history
+  114  ip r
+  115  ip addr
+  116  history
+  117  ethtool -l ens2f2
+  118  ethtool -n ens2f2
+  119  lscpu
+  120  ethtool -n ens2f2
+  121  ethtool -l ens2f2
+  122  ls /sys/class/net/ens2f2/queues/
+  123  ethtool -g ens2f2
+  124  ethtool -x ens2f2
+  125  pwd
+  126  dpdk-devbind.py --status
+  127  pwd
+  128  history
+  129  pwd
+  130  ./dpdk-devbind.py --status
+  131  ps aux | grep epoll
+  132  history | grep wrk
+  133  pwd
+  134  cd /original_pnp/wrk/
+  135  ./wrk  -t 1 -c 1 -d 1s --latency http://192.168.232.251:9001
+  136  pwd
+  137  ip r
+  138  pwd
+  139  cd ../
+  140  ls
+  141  git clone https://gitlab.devtools.intel.com/mchowdh1/ec2-f-stack/-/tree/dev
+  142  git clone https://gitlab.devtools.intel.com/mchowdh1/ec2-f-stack.git
+  143  cd ec2-f-stack/
+  144  ls -ltr
+  145  cd example/
+  146  ls -ltr
+  147  cd ..
+  148  pwd
+  149  ls
+  150  vi README.md 
+  151  history
+  152  git remote -v
+  153  pull
+  154  git pull
+  155  git status
+  156  git branch
+  157  git branch -a
+  158  history
+  159  history > cmd_history
+  160  pwd
+  161  cd dpdk/usertools/
+  162  ls
+  163  git log
+  164  ./dpdk-setup.sh 
+  165  pwd
+  166  cd ../../lib/
+  167  pwd
+  168  export FF_PATH=/original_pnp/ec2-f-stack
+  169  export FF_DPDK=/original_pnp/ec2-f-stack/dpdk/x86_64-native-linuxapp-gcc
+  170  make
+  171  pwd
+  172  cd ../dpdk/
+  173  ls
+  174  cd examples/
+  175  ls
+  176  cd ..
+  177  ls -ltr
+  178  cd x86_64-native-linux-gcc/
+  179  ls
+  180  cd app/
+  181  ls
+  182  ./testpmd -v
+  183  pwd
+  184  cd ../../
+  185  cd ..
+  186  pwd
+  187  ls -ltr
+  188  history
+  189  pwd
+  190  cd lib/
+  191  make
+  192  cd ..
+  193  pwd
+  194  cd lib/
+  195  ls -ltr
+  196  pwd
+  197  make
+  198  cd ../dpdk/x86_64-native-linux-gcc/
+  199  ls -ltr
+  200  ls include/
+  201  ls include/rte_config.h 
+  202  history
+  203  pwd
+  204  cd ..
+  205  cd usertools/
+  206  ./dpdk-setup.sh 
+  207  pwd
+  208  ls
+  209  cd ..
+  210  ls
+  211  ls -ltr
+  212  rm -rf x86_64-native-linux-gcc
+  213  cd usertools/
+  214  ./dpdk-setup.sh 
+  215  pwd
+  216  echo $FF_PATH
+  217  echo $FF_DPDK
+  218  cd ..
+  219  cd lib/
+  220  make
+  221  pwd
+  222  cd ..
+  223  cd example/
+  224  ls
+  225  vim Makefile 
+  226  la -ltr
+  227  ls -ltr
+  228  make
+  229  ls -ltr
+  230  pwd
+  231  cd ..
+  232  vim start.sh 
+  233  vim config.ini 
+  234  vim start.sh 
+  235  ./start.sh 
+  236  ps aux | grep epoll
+  237  netstat -tlpn
+  238  pkill -9 echo_epoll
+  239  ps aux | grep epoll
+  240  ./start.sh 
+  241  ps aux | grep epoll
+  242  pwd
+  243  cd dpdk/usertools/
+  244  ls -ltr
+  245  vim dpdk-setup.sh 
+  246  ./dpdk-setup.sh 
+  247  vim dpdk-setup.sh 
+  248  ls -ltr
+  249  cd ../
+  250  ls
+  251  ls -ltr
+  252  cd mk/
+  253  ls
+  254  cd ..
+  255  pwd
+  256  grep -rl make
+  257  vim │doc/build-sdk-quick.txt
+  258  vim doc/build-sdk-quick.txt
+  259  pwd
+  260  cd ..
+  261  ls -ltr
+  262  vim README.md 
+  263  pwd
+  264  ls -ltr
+  265  vim README.md 
+  266  history
+  267  pwd
+  268  vim config.ini 
+  269  ls -ltr
+  270  vim README.md 
+  271  vim start.sh 
+  272  pwd
+  273  ls -ltr
+  274  vim start.sh 
+  275  vim config.ini 
+  276  ps aux | grep epoll
+  277  history | grep start
+  278  vim config.ini 
+  279  git remote -v
+  280  vim README.md 
+  281  ip addr
+  282  pwd
+  283  pushd  /etc/sysconfig/network-scripts/
+  284  ls -ltr
+  285  cat ifcfg-ens2f1
+  286  ifcfg-ens2f0
+  287  cat ifcfg-ens2f0
+  288  cat  ifcfg-ens2f3
+  289  cat ifcfg-ens2f2
+  290  cat ifcfg-corp 
+  291  popd
+  292  history
+  293  ps aux | grep epoll
+  294  ls -ltr
+  295  vim cmd_history 
+  296  pwd
+  297  cd ..
+  298  ls -ltr
+  299  cd f-stack/
+  300  ls -ltr
+  301  git log
+  302  git branch -a
+  303  pwd
+  304  ls -ltr
+  305  vim README.md 
+  306  cd example/
+  307  ls -ltr
+  308  vim DpDK_exercise_cmds.txt 
+  309  ls -ltr
+  310  vim create_flow.c 
+  311  grep -rl create_flow *
+  312  vim launch_epoll.sh 
+  313  vim Makefile 
+  314  pwd
+  315  cd ..
+  316  ls -ltr
+  317  cd lib/
+  318  ls
+  319  cd ..
+  320  ls -ltr
+  321  cd dpdk/
+  322  ls
+  323  cd app/
+  324  ls
+  325  pwd
+  326  ls
+  327  pwd
+  328  cd ../../example/
+  329  ls -ltr
+  330  vim start.sh 
+  331  vim Makefile 
+  332  vim main_epoll_vanilla.c 
+  333  vim main_epoll.c 
+  334  vim main_epoll_vanilla.c 
+  335  vim main_epoll.c 
+  336  grep -rl create_flow.c *
+  337  vim epoll.ini 
+  338  grep -rl fdir *
+  339  vim DpDK_exercise_cmds.txt 
+  340  ldd echo_epoll 
+  341  ls -ltr
+  342  vim launch_epoll.sh 
+  343  pwd
+  344  ls -ltr
+  345  vim start.sh 
+  346  less start.sh 
+  347  pwd
+  348  history
+  349  history > cmd_history_dpdk
